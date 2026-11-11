@@ -1,0 +1,90 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 500" width="100%" height="100%">
+  <defs>
+    <linearGradient id="bgBurgundyGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#2a0a18"/>
+      <stop offset="100%" stop-color="#14030a"/>
+    </linearGradient>
+    <linearGradient id="skinGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#8d5524"/>
+      <stop offset="100%" stop-color="#673d17"/>
+    </linearGradient>
+    <linearGradient id="roseGoldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f2b6c1"/>
+      <stop offset="50%" stop-color="#d4838f"/>
+      <stop offset="100%" stop-color="#aa5e6c"/>
+    </linearGradient>
+    <linearGradient id="burgundyCloth" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#3c0c1e"/>
+      <stop offset="100%" stop-color="#200610"/>
+    </linearGradient>
+    <linearGradient id="softPinkGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#fdf0f4"/>
+      <stop offset="100%" stop-color="#f7d6de"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background Circle / Burgundy Gradient -->
+  <rect width="500" height="500" fill="url(#bgBurgundyGrad)"/>
+  <circle cx="250" cy="250" r="230" fill="none" stroke="url(#roseGoldGrad)" stroke-width="2.5" stroke-dasharray="8 6" opacity="0.45"/>
+
+  <!-- Tech Code Elements in Rose Gold & Cream -->
+  <text x="50" y="120" fill="#d4838f" opacity="0.4" font-family="'Courier New', monospace" font-size="18">&lt;CS_Graduate/&gt;</text>
+  <text x="320" y="380" fill="#d4838f" opacity="0.4" font-family="'Courier New', monospace" font-size="18">SQL.connect()</text>
+  <text x="330" y="130" fill="#fff8f0" opacity="0.3" font-family="'Courier New', monospace" font-size="16">{ IAA: 2026 }</text>
+  <text x="50" y="390" fill="#fff8f0" opacity="0.3" font-family="'Courier New', monospace" font-size="16">TRA.musoma()</text>
+
+  <!-- Body / Burgundy Blazer -->
+  <path d="M 120 500 C 130 400, 180 370, 250 370 C 320 370, 370 400, 380 500 Z" fill="url(#burgundyCloth)"/>
+  
+  <!-- Blouse Collar with Soft Pink & Rose Gold Accent -->
+  <path d="M 215 370 L 250 435 L 285 370 Z" fill="url(#softPinkGrad)"/>
+  
+  <!-- Burgundy Blazer Lapels with Rose Gold Trim -->
+  <path d="M 175 410 L 225 490 L 190 500 L 140 430 Z" fill="#2d0816" stroke="#d4838f" stroke-width="1.5"/>
+  <path d="M 325 410 L 275 490 L 310 500 L 360 430 Z" fill="#2d0816" stroke="#d4838f" stroke-width="1.5"/>
+
+  <!-- Neck -->
+  <path d="M 225 290 L 225 380 C 225 390, 275 390, 275 380 L 275 290 Z" fill="url(#skinGrad)"/>
+
+  <!-- Hair Back -->
+  <ellipse cx="250" cy="220" rx="105" ry="120" fill="#150f12"/>
+
+  <!-- Head / Face -->
+  <ellipse cx="250" cy="235" rx="72" ry="85" fill="url(#skinGrad)"/>
+
+  <!-- Hair Front / Style -->
+  <path d="M 165 210 C 165 130, 335 130, 335 210 C 315 160, 280 150, 250 155 C 220 150, 185 160, 165 210 Z" fill="#140d10"/>
+  <path d="M 175 190 C 210 160, 260 170, 290 195 C 265 180, 220 180, 175 190 Z" fill="#221217"/>
+
+  <!-- Eyes -->
+  <ellipse cx="220" cy="232" rx="7" ry="5" fill="#23150d"/>
+  <circle cx="222" cy="230" r="2" fill="#fff8f0"/>
+  <ellipse cx="280" cy="232" rx="7" ry="5" fill="#23150d"/>
+  <circle cx="282" cy="230" r="2" fill="#fff8f0"/>
+
+  <!-- Eyebrows -->
+  <path d="M 208 220 Q 220 215 233 222" stroke="#140d10" stroke-width="3" stroke-linecap="round" fill="none"/>
+  <path d="M 267 222 Q 280 215 292 220" stroke="#140d10" stroke-width="3" stroke-linecap="round" fill="none"/>
+
+  <!-- Modern Rose Gold Glasses Frame -->
+  <rect x="202" y="218" width="36" height="28" rx="6" fill="none" stroke="url(#roseGoldGrad)" stroke-width="3"/>
+  <rect x="262" y="218" width="36" height="28" rx="6" fill="none" stroke="url(#roseGoldGrad)" stroke-width="3"/>
+  <line x1="238" y1="230" x2="262" y2="230" stroke="url(#roseGoldGrad)" stroke-width="3"/>
+  <line x1="202" y1="228" x2="182" y2="224" stroke="url(#roseGoldGrad)" stroke-width="2.5"/>
+  <line x1="298" y1="228" x2="318" y2="224" stroke="url(#roseGoldGrad)" stroke-width="2.5"/>
+
+  <!-- Nose -->
+  <path d="M 250 238 L 246 258 L 254 258 Z" fill="#58310f"/>
+
+  <!-- Smile -->
+  <path d="M 233 274 Q 250 288 267 274" stroke="#fff8f0" stroke-width="4" stroke-linecap="round" fill="none"/>
+  <path d="M 230 274 Q 250 294 270 274" stroke="#d4838f" stroke-width="2" stroke-linecap="round" fill="none"/>
+
+  <!-- Rose Gold Earrings -->
+  <circle cx="174" cy="255" r="5.5" fill="url(#roseGoldGrad)"/>
+  <circle cx="326" cy="255" r="5.5" fill="url(#roseGoldGrad)"/>
+
+  <!-- Initials Badge in Burgundy & Rose Gold & Cream -->
+  <circle cx="250" cy="465" r="25" fill="#18050d" stroke="url(#roseGoldGrad)" stroke-width="2.5"/>
+  <text x="250" y="473" font-family="'Comfortaa', sans-serif" font-size="14" font-weight="bold" fill="#fff8f0" text-anchor="middle">EM</text>
+</svg>

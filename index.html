@@ -1,0 +1,859 @@
+<!DOCTYPE html>
+<html lang="en-US">
+
+<head>
+
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="HandheldFriendly" content="true">
+  <meta name="author" content="Elizabeth Manini" />
+  <meta name="description"
+    content="Elizabeth Manini — Computer Science Graduate. Database Management, Business Analysis & Systems Analysis.">
+
+  <!-- grid css -->
+  <link rel="stylesheet" href="css/plugins/bootstrap-grid.css">
+  <!-- font awesome css -->
+  <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+  <!-- swiper css -->
+  <link rel="stylesheet" href="css/plugins/swiper.min.css">
+  <!-- okai css -->
+  <link rel="stylesheet" href="css/style.css">
+  <!-- Comfortaa font -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;500;600;700&display=swap"
+    rel="stylesheet">
+  <!-- page title -->
+  <title>Elizabeth Manini | Database Adminstrator </title>
+
+  <!-- Favicon -->
+  <link rel="shortcut icon" href="favicon.ico" type="image/x-icon">
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <style>
+    /* ========================================================
+           Theme: Burgundy + Soft Pink + Cream + Rose Gold
+           Palette:
+           - Burgundy (Backgrounds): #18050D, #250B16, #360E1D
+           - Cream (Headings & Body): #FFF8F0, #E8D8DF
+           - Rose Gold (Accent & Glow): #D4838F, rgba(212, 131, 143, ...)
+           - Soft Pink (Highlights & Badges): #F7D6DE, #FCE8ED
+           ======================================================== */
+
+    body,
+    .mil-logo,
+    .mil-btn,
+    .mil-main-menu,
+    .mil-suptitle,
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6,
+    .mil-text,
+    .mil-fs14,
+    .mil-fs16,
+    .mil-fs20,
+    .mil-fs26,
+    .mil-fs42,
+    .mil-fs68 {
+      font-family: "Comfortaa", sans-serif !important;
+    }
+
+    body {
+      background-color: #18050D !important;
+      color: #E8D8DF;
+      font-size: 18px;
+      line-height: 1.7;
+    }
+
+    .mil-soft-section {
+      background-color: #250B16 !important;
+    }
+
+    .mil-logo {
+      font-size: 28px !important;
+      color: #FFF8F0 !important;
+    }
+
+    .mil-logo:after {
+      background-color: #D4838F !important;
+    }
+
+    .mil-suptitle {
+      font-size: 14px !important;
+      letter-spacing: 2px;
+      color: #D4838F !important;
+    }
+
+    .mil-accent {
+      color: #D4838F !important;
+    }
+
+    .mil-fs14 {
+      font-size: 16px !important;
+    }
+
+    .mil-fs16 {
+      font-size: 18px !important;
+    }
+
+    .mil-fs18 {
+      font-size: 20px !important;
+    }
+
+    .mil-fs20 {
+      font-size: 22px !important;
+    }
+
+    .mil-fs26 {
+      font-size: 30px !important;
+    }
+
+    .mil-fs42 {
+      font-size: 48px !important;
+    }
+
+    .mil-fs68 {
+      font-size: 76px !important;
+    }
+
+    .mil-btn {
+      font-size: 15px !important;
+    }
+
+    .mil-main-menu a {
+      font-size: 28px !important;
+    }
+
+    .cj-project-meta h3 {
+      font-size: 30px !important;
+    }
+
+    .cj-skill-card h3 {
+      font-size: 22px !important;
+    }
+
+    .cj-tech-tags span {
+      font-size: 14px !important;
+    }
+
+    @media (max-width: 768px) {
+      .mil-fs68 {
+        font-size: 48px !important;
+      }
+
+      .mil-fs42 {
+        font-size: 36px !important;
+      }
+
+      .mil-fs26 {
+        font-size: 24px !important;
+      }
+    }
+
+    /* Top Panel & Sticky Navigation */
+    .mil-top-panel {
+      background: rgba(24, 5, 13, 0.90);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid rgba(212, 131, 143, 0.2);
+    }
+
+    .mil-phone .mil-light {
+      color: #D4838F !important;
+      font-weight: 600;
+    }
+
+    .mil-menu-btn span,
+    .mil-menu-btn span:after,
+    .mil-menu-btn span:before {
+      background-color: #D4838F !important;
+    }
+
+    .mil-menu-window {
+      background-color: rgba(24, 5, 13, 0.98) !important;
+    }
+
+    .mil-main-menu a:hover {
+      color: #D4838F !important;
+    }
+
+    .mil-social a:hover {
+      color: #D4838F !important;
+    }
+
+    .mil-progress {
+      background-color: #D4838F !important;
+    }
+
+    .mil-cursor-follower {
+      border: 2px solid #D4838F !important;
+    }
+
+    /* Personal Hero Section */
+    .cj-hero {
+      min-height: 100vh;
+      padding: 140px 0 80px;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 85% 25%, rgba(212, 131, 143, 0.15) 0%, transparent 60%), #18050D;
+    }
+
+    .cj-hero-copy {
+      position: relative;
+      z-index: 2;
+      max-width: 580px;
+    }
+
+    .cj-hero-copy .mil-text {
+      color: #E8D8DF;
+      line-height: 1.75;
+    }
+
+    .cj-hero-photo {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      padding: 20px 0;
+    }
+
+    .cj-profile {
+      width: min(100%, 380px);
+      aspect-ratio: 1;
+      border-radius: 50%;
+      overflow: hidden;
+      border: 6px solid #D4838F;
+      box-shadow: 0 20px 60px rgba(212, 131, 143, 0.35);
+      background: #250B16;
+      transition: transform 0.4s ease;
+    }
+
+    .cj-profile:hover {
+      transform: scale(1.02);
+    }
+
+    .cj-profile img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+    }
+
+    .cj-btn-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      align-items: center;
+    }
+
+    /* Rose Gold & Cream Buttons */
+    .mil-btn {
+      background-color: #D4838F !important;
+      color: #18050D !important;
+      font-weight: 700 !important;
+      border: 1px solid #D4838F !important;
+      transition: all 0.3s ease !important;
+    }
+
+    .mil-btn:hover {
+      background-color: #F7D6DE !important;
+      color: #18050D !important;
+      transform: translateY(-2px);
+      box-shadow: 0 10px 25px rgba(212, 131, 143, 0.35);
+    }
+
+    .mil-btn.mil-btn-border {
+      background-color: transparent !important;
+      color: #FFF8F0 !important;
+      border: 1px solid rgba(255, 248, 240, 0.3) !important;
+    }
+
+    .mil-btn.mil-btn-border:hover {
+      background-color: transparent !important;
+      border-color: #D4838F !important;
+      color: #D4838F !important;
+    }
+
+    .mil-btn.mil-btn-soft {
+      background-color: rgba(212, 131, 143, 0.16) !important;
+      color: #F7D6DE !important;
+      border: 1px solid rgba(212, 131, 143, 0.35) !important;
+    }
+
+    .mil-btn.mil-btn-soft:hover {
+      background-color: #D4838F !important;
+      color: #18050D !important;
+    }
+
+    /* Skill Cards */
+    .cj-skill-card {
+      padding: 40px 30px;
+      background: #250B16;
+      border: 1px solid rgba(212, 131, 143, 0.2);
+      border-radius: 4px;
+      height: 100%;
+      transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .cj-skill-card:hover {
+      border-color: #D4838F;
+      transform: translateY(-6px);
+      box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
+    }
+
+    .cj-skill-card i {
+      font-size: 36px;
+      margin-bottom: 20px;
+      display: block;
+      color: #D4838F;
+    }
+
+    .cj-skill-card h3 {
+      color: #FFF8F0;
+    }
+
+    .cj-skill-card p {
+      color: #E8D8DF;
+    }
+
+    /* Project Cards */
+    #projects .mil-project-card {
+      overflow: visible;
+    }
+
+    #projects .mil-project-card .mil-cover-frame {
+      overflow: hidden;
+      border-radius: 6px;
+      border: 1px solid rgba(212, 131, 143, 0.25);
+      background: #250B16;
+    }
+
+    #projects .mil-project-card .mil-cover-frame .mil-hover-frame,
+    #projects .mil-project-card .mil-cover-frame .mil-hover-overlay {
+      overflow: hidden;
+    }
+
+    .cj-project-meta {
+      position: relative;
+      z-index: 2;
+      margin-top: 28px;
+      padding-top: 4px;
+    }
+
+    .cj-project-meta h3 {
+      color: #FFF8F0;
+    }
+
+    .cj-project-meta .mil-text {
+      color: #E8D8DF;
+    }
+
+    .cj-tech-tags {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 16px;
+    }
+
+    .cj-tech-tags span {
+      font-size: 13px !important;
+      padding: 6px 14px;
+      border: 1px solid rgba(212, 131, 143, 0.3);
+      border-radius: 4px;
+      color: #FFF8F0;
+      background: rgba(247, 214, 222, 0.08);
+    }
+
+    /* Experience Cards */
+    .cj-exp-card {
+      background: #250B16;
+      border-left: 4px solid #D4838F;
+      border-top: 1px solid rgba(212, 131, 143, 0.18);
+      border-right: 1px solid rgba(212, 131, 143, 0.18);
+      border-bottom: 1px solid rgba(212, 131, 143, 0.18);
+      border-radius: 0 6px 6px 0;
+      padding: 40px;
+      margin-bottom: 30px;
+      transition: transform 0.3s ease, border-color 0.3s ease;
+    }
+
+    .cj-exp-card:hover {
+      transform: translateX(4px);
+      border-right-color: #D4838F;
+    }
+
+    .cj-exp-card:last-child {
+      margin-bottom: 0;
+    }
+
+    .cj-exp-card h3 {
+      color: #FFF8F0;
+    }
+
+    .cj-exp-card ul {
+      margin: 20px 0 0;
+      padding-left: 22px;
+    }
+
+    .cj-exp-card li {
+      color: #E8D8DF;
+      font-size: 17px;
+      line-height: 1.75;
+      margin-bottom: 12px;
+    }
+
+    .cj-exp-card li strong {
+      color: #FFF8F0;
+    }
+
+    .cj-exp-card li:last-child {
+      margin-bottom: 0;
+    }
+
+    /* Contact Section (Burgundy + Cream + Rose Gold Accent Banner) */
+    .mil-accent-section {
+      background: linear-gradient(135deg, #1A050E 0%, #360B1C 100%) !important;
+      border-top: 2px solid #D4838F;
+      border-bottom: 2px solid #D4838F;
+    }
+
+    .mil-accent-section .mil-suptitle {
+      color: #F7D6DE !important;
+    }
+
+    .mil-accent-section h2 {
+      color: #FFF8F0 !important;
+    }
+
+    .mil-accent-section p {
+      color: #E8D8DF !important;
+    }
+
+    .mil-accent-section .mil-btn-soft {
+      background-color: #D4838F !important;
+      color: #18050D !important;
+      font-weight: 700 !important;
+      border: 1px solid #D4838F !important;
+    }
+
+    .mil-accent-section .mil-btn-soft:hover {
+      background-color: #F7D6DE !important;
+      color: #18050D !important;
+    }
+
+    .mil-accent-section .mil-btn-border {
+      border: 1px solid #D4838F !important;
+      color: #FFF8F0 !important;
+    }
+
+    .mil-accent-section .mil-btn-border:hover {
+      background-color: #D4838F !important;
+      color: #18050D !important;
+    }
+
+    /* Footer */
+    footer {
+      background-color: #110308 !important;
+      border-top: 1px solid rgba(212, 131, 143, 0.18);
+    }
+
+    .mil-footer-menu a:hover,
+    .mil-footer-list a:hover {
+      color: #D4838F !important;
+    }
+
+    #mil-btt {
+      color: #D4838F !important;
+    }
+
+    @media (max-width: 991px) {
+      .cj-hero {
+        padding-top: 120px;
+        text-align: center;
+      }
+
+      .cj-hero-copy {
+        max-width: none;
+        margin-bottom: 40px;
+      }
+
+      .cj-btn-row {
+        justify-content: center;
+      }
+
+      .cj-profile {
+        width: min(100%, 280px);
+      }
+    }
+  </style>
+
+</head>
+
+<body class="mil-custom-cursor">
+
+  <!-- wrapper -->
+  <div id="smooth-wrapper" class="mil-page-wrapper">
+
+    <!-- cursor -->
+    <div class="mil-cursor-follower"></div>
+    <!-- cursor end -->
+
+    <!-- scroll progress -->
+    <div class="mil-progress-track">
+      <div class="mil-progress"></div>
+    </div>
+    <!-- scroll progress end -->
+
+    <!-- top panel -->
+    <div class="mil-top-panel">
+      <div class="container">
+        <div class="row mil-aic">
+          <div class="col-6">
+            <a href="index.html" class="mil-logo mil-c-gone">Elizabeth.</a>
+          </div>
+          <div class="col-6 mil-jce mil-aic">
+            <div class="mil-phone mil-group-text mil-fs14"><span class="mil-soft">Phone:</span><span
+                class="mil-light">+255 766 011 587</span></div>
+            <div class="mil-buttons-frame">
+              <div class="mil-menu-btn mil-c-gone">
+                <span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- top panel end -->
+
+    <!-- menu -->
+    <div class="mil-menu-window">
+      <div class="container">
+        <ul class="mil-main-menu mil-c-gone">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#experience">Experience</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <ul class="mil-social mil-center">
+          <li><a href="https://github.com/bethmanini" target="_blank" rel="noopener noreferrer" class="mil-c-gone"><i
+                class="fab fa-github"></i></a></li>
+          <li><a href="https://linkedin.com/in/beth-manini-939b0341a" target="_blank" rel="noopener noreferrer"
+              class="mil-c-gone"><i class="fab fa-linkedin-in"></i></a></li>
+          <li><a href="mailto:elizabethmanini9@gmail.com" class="mil-c-gone"><i class="fas fa-envelope"></i></a></li>
+        </ul>
+      </div>
+    </div>
+    <!-- menu end -->
+
+    <!-- content -->
+    <div id="smooth-content" class="mil-content">
+
+      <!-- hero -->
+      <div id="home" class="cj-hero">
+        <div class="container">
+          <div class="row mil-aic">
+            <div class="col-12 col-lg-6">
+              <div class="cj-hero-copy">
+                <span class="mil-suptitle mil-accent mil-mb30">Hello, I'm</span>
+                <h1 class="mil-fs68 mil-mb30">Elizabeth Manini</h1>
+                <p class="mil-text mil-fs26 mil-light mil-mb30">Database Adminstrator </p>
+                <p class="mil-text mil-fs16 mil-mb60">I am a Computer Science graduate from the Institute of Accountancy
+                  Arusha (IAA), with a strong interest in Database Administration. I am passionate about database
+                  management, data security, database maintenance, and ensuring data accuracy, availability, and
+                  reliability...</p>
+                <div class="cj-btn-row">
+                  <a href="#projects" class="mil-btn mil-c-gone">View Projects</a>
+                  <a href="#contact" class="mil-btn mil-btn-border mil-c-gone">Contact Me</a>
+                  <a href="cv.html" target="_blank" class="mil-btn mil-btn-soft mil-c-gone"><i
+                      class="fas fa-file-alt"></i> View CV</a>
+                </div>
+              </div>
+            </div>
+            <div class="col-12 col-lg-6">
+              <div class="cj-hero-photo">
+                <div class="cj-profile">
+                  <img src="img/personal/profile.png" alt="Elizabeth Manini"
+                    onerror="this.src='img/personal/profile.svg'">
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- hero end -->
+
+      <!-- about -->
+      <div id="about" class="mil-p-120-120">
+        <div class="container">
+          <div class="row mil-jcb">
+            <div class="col-lg-5">
+              <span class="mil-suptitle mil-accent mil-mb30 mil-up">Get to know me</span>
+              <h2 class="mil-fs42 mil-mb60 mil-up">About Me</h2>
+            </div>
+            <div class="col-lg-6">
+              <p class="mil-text mil-fs20 mil-light mil-mb30 mil-up">Recent Bachelor of Computer Science graduate from
+                the Institute of Accountancy Arusha (IAA), with practical exposure to database management, business
+                analysis, and system analysis through field practical training at the Tanzania Revenue Authority (TRA),
+                Musoma.</p>
+              <p class="mil-text mil-fs16 mil-mb30 mil-up">Interested in applying technical knowledge, analytical
+                thinking, and problem-solving skills within a professional ICT environment, while continuing to grow in
+                database, systems, software development, and enterprise information systems.</p>
+              <p class="mil-text mil-fs16 mil-up">Passionate about data integrity, structured analysis, and delivering
+                reliable software and information systems that solve real organizational problems.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- about end -->
+
+      <!-- skills -->
+      <div id="skills" class="mil-soft-section mil-p-120-90">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mil-mb60">
+              <span class="mil-suptitle mil-accent mil-mb30 mil-up">What I work with</span>
+              <h2 class="mil-fs42 mil-up">Technical Skills</h2>
+            </div>
+            <div class="col-md-6 col-lg-3 mil-mb30">
+              <div class="cj-skill-card mil-up">
+                <i class="fas fa-database"></i>
+                <h3 class="mil-fs20 mil-mb15">Databases</h3>
+                <p class="mil-text mil-fs16">Database Management, Database Concepts, SQL, Information Systems</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mil-mb30">
+              <div class="cj-skill-card mil-up">
+                <i class="fas fa-network-wired"></i>
+                <h3 class="mil-fs20 mil-mb15">Systems Analysis</h3>
+                <p class="mil-text mil-fs16">System Development Fundamentals, Business Analysis, Process Requirements
+                </p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mil-mb30">
+              <div class="cj-skill-card mil-up">
+                <i class="fas fa-code"></i>
+                <h3 class="mil-fs20 mil-mb15">Programming &amp; Web</h3>
+                <p class="mil-text mil-fs16">Web Development Fundamentals, HTML/CSS, Python &amp; Django workshop</p>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-3 mil-mb30">
+              <div class="cj-skill-card mil-up">
+                <i class="fas fa-laptop"></i>
+                <h3 class="mil-fs20 mil-mb15">IT Support &amp; Tools</h3>
+                <p class="mil-text mil-fs16">Computer Applications, Microsoft Word, Excel, PowerPoint, Troubleshooting
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- skills end -->
+
+      <!-- projects -->
+      <div id="projects" class="mil-portfolio mil-p-120-90">
+        <div class="container">
+          <div class="row">
+            <div class="col-12 mil-mb60">
+              <span class="mil-suptitle mil-accent mil-mb30 mil-up">What I have built</span>
+              <h2 class="mil-fs42 mil-up">Featured Projects</h2>
+            </div>
+
+            <!-- Project 1: Foundation Charity -->
+            <div class="col-md-6 mil-mb60">
+              <div class="mil-project-card mil-up">
+                <a href="#projects" class="mil-c-view">
+                  <div class="mil-cover-frame mil-h">
+                    <div class="mil-hover-frame">
+                      <img src="img/projects/charity-foundation.svg" alt="Foundation Charity Platform"
+                        class="mil-scale-img" data-value-1="1" data-value-2="1.25">
+                    </div>
+                    <div class="mil-hover-overlay"></div>
+                  </div>
+                </a>
+                <div class="cj-project-meta">
+                  <h3 class="mil-fs26 mil-mb15">Foundation Charity</h3>
+                  <p class="mil-text mil-fs16">Academic and software project focused on supporting a charity foundation,
+                    managing community relief programs, donations, and beneficiary records.</p>
+                  <div class="cj-tech-tags">
+                    <span>Web Fundamentals</span>
+                    <span>Database</span>
+                    <span>System Design</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <!-- Project 2: Password System -->
+            <div class="col-md-6 mil-mb60">
+              <div class="mil-project-card mil-up">
+                <a href="#projects" class="mil-c-view">
+                  <div class="mil-cover-frame mil-h">
+                    <div class="mil-hover-frame">
+                      <img src="img/projects/password-system.svg" alt="Password Management System" class="mil-scale-img"
+                        data-value-1="1" data-value-2="1.25">
+                    </div>
+                    <div class="mil-hover-overlay"></div>
+                  </div>
+                </a>
+                <div class="cj-project-meta">
+                  <h3 class="mil-fs26 mil-mb15">Password System</h3>
+                  <p class="mil-text mil-fs16">System project related to password management, credential encryption
+                    concepts, strength evaluation, and protected authentication safeguards.</p>
+                  <div class="cj-tech-tags">
+                    <span>Computer Security</span>
+                    <span>Authentication</span>
+                    <span>Database Concepts</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+
+
+            <!-- projects end -->
+
+            <!-- experience -->
+            <div id="experience" class="mil-soft-section mil-p-120-120">
+              <div class="container">
+                <div class="row mil-jcc">
+                  <div class="col-lg-10">
+                    <span class="mil-suptitle mil-accent mil-mb30 mil-up">My professional journey</span>
+                    <h2 class="mil-fs42 mil-mb60 mil-up">Experience</h2>
+
+                    <!-- Work Experience -->
+                    <div class="cj-exp-card mil-up">
+                      <h3 class="mil-fs26 mil-mb15">Field Practical Trainee</h3>
+                      <p class="mil-text mil-accent mil-fs16 mil-mb15">Tanzania Revenue Authority (TRA) · Musoma,
+                        Tanzania</p>
+                      <ul>
+                        <li>Participated in database-related practical activities, including basic database
+                          management tasks.
+                        </li>
+                        <li>Assisted with business analysis by understanding business requirements and
+                          organizational
+                          processes.</li>
+                        <li>Contributed to system analysis activities, including identifying and analysing system
+                          requirements.</li>
+                        <li>Gained practical understanding of how information systems operate within a professional
+                          organization.</li>
+                        <li>Applied Computer Science knowledge and academic concepts in a real working environment.
+                        </li>
+                      </ul>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- experience end -->
+
+            <!-- contact -->
+            <div id="contact" class="mil-accent-section mil-up mil-p-180-120">
+              <div class="container">
+                <div class="row">
+                  <div class="col-lg-8">
+                    <span class="mil-suptitle mil-mb30 mil-up">Let's connect</span>
+                    <h2 class="mil-fs68 mil-light mil-mb30 mil-up">Contact me</h2>
+                    <p class="mil-text mil-fs26 mil-light mil-mb60 mil-up">Interested in working together or
+                      discussing
+                      technology? Feel free to get in touch.</p>
+                    <div class="cj-btn-row mil-up">
+                      <a href="mailto:elizabethmanini9@gmail.com" class="mil-btn mil-btn-soft mil-c-gone">Send Me an
+                        Email</a>
+                      <a href="tel:+255766011587" class="mil-btn mil-btn-border mil-c-gone">+255 766 011 587</a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <!-- contact end -->
+
+            <!-- footer -->
+            <footer>
+              <div class="container mil-p-120-0">
+                <div class="row mil-jcb">
+                  <div class="col-8 col-lg-4 mil-mb90">
+                    <a href="index.html" class="mil-logo mil-mb60 mil-up mil-c-gone">Elizabeth.</a>
+                    <p class="mil-text mil-fs16 mil-mb60 mil-up">Computer Science graduate dedicated to building
+                      clean, secure
+                      databases and robust information systems.</p>
+                    <ul class="mil-social mil-up">
+                      <li><a href="https://github.com/bethmanini" target="_blank" rel="noopener noreferrer"
+                          class="mil-c-gone"><i class="fab fa-github"></i></a></li>
+                      <li><a href="https://linkedin.com/in/beth-manini-939b0341a" target="_blank"
+                          rel="noopener noreferrer" class="mil-c-gone"><i class="fab fa-linkedin-in"></i></a></li>
+                      <li><a href="mailto:elizabethmanini9@gmail.com" class="mil-c-gone"><i
+                            class="fas fa-envelope"></i></a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-2 mil-mb90">
+                    <h5 class="mil-fs16 mil-mb60 mil-up">Menu</h5>
+                    <ul class="mil-footer-menu">
+                      <li class="mil-up"><a href="#about" class="mil-c-gone">About</a></li>
+                      <li class="mil-up"><a href="#skills" class="mil-c-gone">Skills</a></li>
+                      <li class="mil-up"><a href="#projects" class="mil-c-gone">Projects</a></li>
+                      <li class="mil-up"><a href="#experience" class="mil-c-gone">Experience</a></li>
+                      <li class="mil-up"><a href="#contact" class="mil-c-gone">Contact</a></li>
+                    </ul>
+                  </div>
+                  <div class="col-lg-4 mil-mb90">
+                    <h5 class="mil-fs16 mil-mb60 mil-up">Contact</h5>
+                    <ul class="mil-footer-list">
+                      <li class="mil-text mil-up">Phone: <a href="tel:+255766011587" class="mil-text-link">+255 766
+                          011
+                          587</a></li>
+                      <li class="mil-text mil-up">Email: <a href="mailto:elizabethmanini9@gmail.com"
+                          class="mil-text-link">elizabethmanini9@gmail.com</a></li>
+                      <li class="mil-text mil-up">Location: Musoma, Tanzania</li>
+                      <li class="mil-text mil-up"><a href="cv.html" class="mil-text-link" target="_blank">View
+                          Curriculum
+                          Vitae</a></li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+              <div class="mil-footer-bottom mil-up">
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-6 mil-mb30">
+                      <p class="mil-fs14 mil-soft">© 2026 Elizabeth E. Manini. All Rights Reserved.</p>
+                    </div>
+                    <div class="col-lg-6 mil-jce mil-992-jcs mil-mb30">
+                      <a href="#home" class="mil-group-text mil-accent mil-c-gone" id="mil-btt"><i
+                          class="fas fa-chevron-up"></i> <span>Back to top</span></a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </footer>
+            <!-- footer end -->
+
+          </div>
+          <!-- content -->
+
+        </div>
+        <!-- wrapper end -->
+
+        <!-- gsap js -->
+        <script src="js/plugins/gsap.min.js"></script>
+        <!-- scroll smoother -->
+        <script src="js/plugins/ScrollSmoother.min.js"></script>
+        <!-- scroll trigger js -->
+        <script src="js/plugins/ScrollTrigger.min.js"></script>
+        <!-- scroll to js -->
+        <script src="js/plugins/ScrollTo.min.js"></script>
+        <!-- swiper js -->
+        <script src="js/plugins/swiper.min.js"></script>
+        <!-- okai js -->
+        <script src="js/main.js"></script>
+
+</body>
+
+</html>
