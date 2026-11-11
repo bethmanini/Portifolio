@@ -33,12 +33,12 @@
 
   <style>
     /* ========================================================
-           Theme: Burgundy + Soft Pink + Cream + Rose Gold
+           Theme: Charcoal + Coral + Warm Orange
            Palette:
-           - Burgundy (Backgrounds): #18050D, #250B16, #360E1D
-           - Cream (Headings & Body): #FFF8F0, #E8D8DF
-           - Rose Gold (Accent & Glow): #D4838F, rgba(212, 131, 143, ...)
-           - Soft Pink (Highlights & Badges): #F7D6DE, #FCE8ED
+           - Charcoal (Backgrounds): #0A0B0F, #14151A, #24252B
+           - White (Headings) + Gray (Body): #FFFFFF, #B8BBC2
+           - Coral (Accent & Glow): #F35A38, rgba(243, 90, 56, ...)
+           - Warm Orange (Highlights & Badges): #F2B279, #F7C495
            ======================================================== */
 
     body,
@@ -63,33 +63,33 @@
     }
 
     body {
-      background-color: #18050D !important;
-      color: #E8D8DF;
+      background-color: #0A0B0F !important;
+      color: #B8BBC2;
       font-size: 16px;
       line-height: 1.65;
     }
 
     .mil-soft-section {
-      background-color: #250B16 !important;
+      background-color: #14151A !important;
     }
 
     .mil-logo {
       font-size: 24px !important;
-      color: #FFF8F0 !important;
+      color: #FFFFFF !important;
     }
 
     .mil-logo:after {
-      background-color: #D4838F !important;
+      background-color: #F35A38 !important;
     }
 
     .mil-suptitle {
       font-size: 14px !important;
       letter-spacing: 2px;
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     .mil-accent {
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     .mil-fs14 {
@@ -142,41 +142,41 @@
 
     /* Top Panel & Sticky Navigation */
     .mil-top-panel {
-      background: rgba(24, 5, 13, 0.90);
+      background: rgba(10, 11, 15, 0.90);
       backdrop-filter: blur(12px);
       -webkit-backdrop-filter: blur(12px);
-      border-bottom: 1px solid rgba(212, 131, 143, 0.2);
+      border-bottom: 1px solid rgba(243, 90, 56, 0.2);
     }
 
     .mil-phone .mil-light {
-      color: #D4838F !important;
+      color: #F35A38 !important;
       font-weight: 600;
     }
 
     .mil-menu-btn span,
     .mil-menu-btn span:after,
     .mil-menu-btn span:before {
-      background-color: #D4838F !important;
+      background-color: #F35A38 !important;
     }
 
     .mil-menu-window {
-      background-color: rgba(24, 5, 13, 0.98) !important;
+      background-color: rgba(10, 11, 15, 0.98) !important;
     }
 
     .mil-main-menu a:hover {
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     .mil-social a:hover {
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     .mil-progress {
-      background-color: #D4838F !important;
+      background-color: #F35A38 !important;
     }
 
     .mil-cursor-follower {
-      border: 2px solid #D4838F !important;
+      border: 2px solid #F35A38 !important;
     }
 
     /* Personal Hero Section */
@@ -185,7 +185,7 @@
       padding: 140px 0 80px;
       display: flex;
       align-items: center;
-      background: radial-gradient(circle at 85% 25%, rgba(212, 131, 143, 0.15) 0%, transparent 60%), #18050D;
+      background: #0A0B0F;
     }
 
     .cj-hero-copy {
@@ -195,7 +195,7 @@
     }
 
     .cj-hero-copy .mil-text {
-      color: #E8D8DF;
+      color: #B8BBC2;
       line-height: 1.75;
     }
 
@@ -211,9 +211,9 @@
       aspect-ratio: 1;
       border-radius: 50%;
       overflow: hidden;
-      border: 6px solid #D4838F;
-      box-shadow: 0 20px 60px rgba(212, 131, 143, 0.35);
-      background: #250B16;
+      border: 6px solid #F35A38;
+      box-shadow: 0 20px 60px rgba(243, 90, 56, 0.25);
+      background: #14151A;
       transition: transform 0.4s ease;
     }
 
@@ -236,57 +236,57 @@
       align-items: center;
     }
 
-    /* Rose Gold & Cream Buttons */
+    /* Coral and warm orange buttons */
     .mil-btn {
-      background-color: #D4838F !important;
-      color: #18050D !important;
+      background-color: #F35A38 !important;
+      color: #0A0B0F !important;
       font-weight: 700 !important;
-      border: 1px solid #D4838F !important;
+      border: 1px solid #F35A38 !important;
       transition: all 0.3s ease !important;
     }
 
     .mil-btn:hover {
-      background-color: #F7D6DE !important;
-      color: #18050D !important;
+      background-color: #F2B279 !important;
+      color: #0A0B0F !important;
       transform: translateY(-2px);
-      box-shadow: 0 10px 25px rgba(212, 131, 143, 0.35);
+      box-shadow: 0 10px 25px rgba(243, 90, 56, 0.35);
     }
 
     .mil-btn.mil-btn-border {
       background-color: transparent !important;
-      color: #FFF8F0 !important;
-      border: 1px solid rgba(255, 248, 240, 0.3) !important;
+      color: #FFFFFF !important;
+      border: 1px solid #FFFFFF !important;
     }
 
     .mil-btn.mil-btn-border:hover {
       background-color: transparent !important;
-      border-color: #D4838F !important;
-      color: #D4838F !important;
+      border-color: #F35A38 !important;
+      color: #F35A38 !important;
     }
 
     .mil-btn.mil-btn-soft {
-      background-color: rgba(212, 131, 143, 0.16) !important;
-      color: #F7D6DE !important;
-      border: 1px solid rgba(212, 131, 143, 0.35) !important;
+      background-color: #F2B279 !important;
+      color: #0A0B0F !important;
+      border: 1px solid #F2B279 !important;
     }
 
     .mil-btn.mil-btn-soft:hover {
-      background-color: #D4838F !important;
-      color: #18050D !important;
+      background-color: #F35A38 !important;
+      color: #0A0B0F !important;
     }
 
     /* Skill Cards */
     .cj-skill-card {
       padding: 40px 30px;
-      background: #250B16;
-      border: 1px solid rgba(212, 131, 143, 0.2);
+      background: #14151A;
+      border: 1px solid rgba(243, 90, 56, 0.2);
       border-radius: 4px;
       height: 100%;
       transition: border-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
     }
 
     .cj-skill-card:hover {
-      border-color: #D4838F;
+      border-color: #F35A38;
       transform: translateY(-6px);
       box-shadow: 0 16px 40px rgba(0, 0, 0, 0.45);
     }
@@ -295,15 +295,15 @@
       font-size: 36px;
       margin-bottom: 20px;
       display: block;
-      color: #D4838F;
+      color: #F35A38;
     }
 
     .cj-skill-card h3 {
-      color: #FFF8F0;
+      color: #FFFFFF;
     }
 
     .cj-skill-card p {
-      color: #E8D8DF;
+      color: #B8BBC2;
     }
 
     /* Project Cards */
@@ -314,8 +314,8 @@
     #projects .mil-project-card .mil-cover-frame {
       overflow: hidden;
       border-radius: 6px;
-      border: 1px solid rgba(212, 131, 143, 0.25);
-      background: #250B16;
+      border: 1px solid rgba(243, 90, 56, 0.25);
+      background: #14151A;
     }
 
     #projects .mil-project-card .mil-cover-frame .mil-hover-frame,
@@ -331,11 +331,11 @@
     }
 
     .cj-project-meta h3 {
-      color: #FFF8F0;
+      color: #FFFFFF;
     }
 
     .cj-project-meta .mil-text {
-      color: #E8D8DF;
+      color: #B8BBC2;
     }
 
     .cj-tech-tags {
@@ -348,19 +348,19 @@
     .cj-tech-tags span {
       font-size: 13px !important;
       padding: 6px 14px;
-      border: 1px solid rgba(212, 131, 143, 0.3);
+      border: 1px solid rgba(243, 90, 56, 0.3);
       border-radius: 4px;
-      color: #FFF8F0;
-      background: rgba(247, 214, 222, 0.08);
+      color: #FFFFFF;
+      background: rgba(242, 178, 121, 0.08);
     }
 
     /* Experience Cards */
     .cj-exp-card {
-      background: #250B16;
-      border-left: 4px solid #D4838F;
-      border-top: 1px solid rgba(212, 131, 143, 0.18);
-      border-right: 1px solid rgba(212, 131, 143, 0.18);
-      border-bottom: 1px solid rgba(212, 131, 143, 0.18);
+      background: #14151A;
+      border-left: 4px solid #F35A38;
+      border-top: 1px solid rgba(243, 90, 56, 0.18);
+      border-right: 1px solid rgba(243, 90, 56, 0.18);
+      border-bottom: 1px solid rgba(243, 90, 56, 0.18);
       border-radius: 0 6px 6px 0;
       padding: 40px;
       margin-bottom: 30px;
@@ -369,7 +369,7 @@
 
     .cj-exp-card:hover {
       transform: translateX(4px);
-      border-right-color: #D4838F;
+      border-right-color: #F35A38;
     }
 
     .cj-exp-card:last-child {
@@ -377,7 +377,7 @@
     }
 
     .cj-exp-card h3 {
-      color: #FFF8F0;
+      color: #FFFFFF;
     }
 
     .cj-exp-card ul {
@@ -386,74 +386,74 @@
     }
 
     .cj-exp-card li {
-      color: #E8D8DF;
+      color: #B8BBC2;
       font-size: 16px;
       line-height: 1.75;
       margin-bottom: 12px;
     }
 
     .cj-exp-card li strong {
-      color: #FFF8F0;
+      color: #FFFFFF;
     }
 
     .cj-exp-card li:last-child {
       margin-bottom: 0;
     }
 
-    /* Contact Section (Burgundy + Cream + Rose Gold Accent Banner) */
+    /* Contact Section */
     .mil-accent-section {
-      background: linear-gradient(135deg, #1A050E 0%, #360B1C 100%) !important;
-      border-top: 2px solid #D4838F;
-      border-bottom: 2px solid #D4838F;
+      background: linear-gradient(135deg, #0A0B0F 0%, #191A1F 100%) !important;
+      border-top: 2px solid #F35A38;
+      border-bottom: 2px solid #F35A38;
     }
 
     .mil-accent-section .mil-suptitle {
-      color: #F7D6DE !important;
+      color: #F2B279 !important;
     }
 
     .mil-accent-section h2 {
-      color: #FFF8F0 !important;
+      color: #FFFFFF !important;
     }
 
     .mil-accent-section p {
-      color: #E8D8DF !important;
+      color: #B8BBC2 !important;
     }
 
     .mil-accent-section .mil-btn-soft {
-      background-color: #D4838F !important;
-      color: #18050D !important;
+      background-color: #F35A38 !important;
+      color: #0A0B0F !important;
       font-weight: 700 !important;
-      border: 1px solid #D4838F !important;
+      border: 1px solid #F35A38 !important;
     }
 
     .mil-accent-section .mil-btn-soft:hover {
-      background-color: #F7D6DE !important;
-      color: #18050D !important;
+      background-color: #F2B279 !important;
+      color: #0A0B0F !important;
     }
 
     .mil-accent-section .mil-btn-border {
-      border: 1px solid #D4838F !important;
-      color: #FFF8F0 !important;
+      border: 1px solid #F35A38 !important;
+      color: #FFFFFF !important;
     }
 
     .mil-accent-section .mil-btn-border:hover {
-      background-color: #D4838F !important;
-      color: #18050D !important;
+      background-color: #F35A38 !important;
+      color: #0A0B0F !important;
     }
 
     /* Footer */
     footer {
-      background-color: #110308 !important;
-      border-top: 1px solid rgba(212, 131, 143, 0.18);
+      background-color: #08090C !important;
+      border-top: 1px solid rgba(243, 90, 56, 0.18);
     }
 
     .mil-footer-menu a:hover,
     .mil-footer-list a:hover {
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     #mil-btt {
-      color: #D4838F !important;
+      color: #F35A38 !important;
     }
 
     @media (max-width: 991px) {
